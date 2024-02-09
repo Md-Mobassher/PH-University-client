@@ -1,11 +1,12 @@
-import { createBrowserRouter } from "react-router-dom";
-import App from "../App";
-import { routeGenerator } from "../utils/routesGenerator";
-import { adminPaths } from "./admin.routes";
-import Login from "../pages/login/Login";
-import Register from "../pages/login/Register";
-import { facultyPaths } from "./faculty.routes";
-import { studentPaths } from "./student.routes";
+import { createBrowserRouter } from 'react-router-dom';
+import App from '../App';
+import Login from '../pages/Login';
+import Register from '../pages/Register';
+import { adminPaths } from './admin.routes';
+import { routeGenerator } from '../utils/routesGenerator';
+import { facultyPaths } from './faculty.routes';
+import { studentPaths } from './student.routes';
+import ProtectedRoute from '../components/layout/ProtectedRoute';
 
 const router = createBrowserRouter([
   {
